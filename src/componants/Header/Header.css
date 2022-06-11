@@ -1,0 +1,23 @@
+.nav-bg{
+    background-color:cadetblue;
+}
+.menu a{
+    margin-left: 20px;
+    text-decoration: none;
+    font-family: cursive;
+    color: red;
+
+}
+.menu a:hover{
+    color: whitesmoke;
+    font-family: fantasy;
+}
+.logo{
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: large;
+    font-family: fantasy;
+    color: burlywood;
+    text-shadow: 3px 3px 3px black;
+}
+/* FaUser */

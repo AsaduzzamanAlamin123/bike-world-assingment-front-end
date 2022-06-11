@@ -1,0 +1,38 @@
+ .first{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+    height: 750px;
+} 
+.vertical-center{
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: auto;
+  width: 50%;
+  margin-left: 300px;
+  }
+  .text{
+    color:white;
+    font-family: cursive;
+
+  }
+  .wel{
+    color: red;
+    font-family: fantasy;
+  }
+  .wrl{
+    color: brown;
+    font-family: fantasy;
+  }
+  .field{
+    border-radius: 5px;
+    background-color: whitesmoke;
+    border:none;
+    text-align: center;
+    width: 80%;
+  }
