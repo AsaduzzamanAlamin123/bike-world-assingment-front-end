@@ -7,6 +7,7 @@ import Inventory from './componants/Inventory/Inventory';
 import LogIn from './componants/Login/Login';
 import Register from './componants/Register/Register';
 import NotFound from './componants/NotFound/NotFound'
+import Footer from './componants/Footer/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path='/register' element={<Register></Register>}></Route>
       <Route path='*' element={<NotFound></NotFound>}></Route>
      </Routes>
+     <Footer></Footer>
     </div>
   );
 }

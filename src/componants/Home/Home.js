@@ -53,7 +53,7 @@ const Home = () => {
                          batting.[9] With no float chamber, the rider had to open the gasoline tap periodically to admit fuel into the carburetor.</p>
 
                 </div>
-                <div className='imgg-part'>
+                <div className='imgg-part '>
                     <img  className='img-part' src={Bike1} alt="" />
 
                 </div>

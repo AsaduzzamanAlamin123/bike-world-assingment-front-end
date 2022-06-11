@@ -1,0 +1,45 @@
+.footer{
+    background-color: black;
+    border-radius: 10px;
+}
+.text-sstyle{
+    color: whitesmoke;
+    font-family: cursive;
+    font-weight: bolder;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 25% auto auto auto;
+}
+.texttt{
+    color: whitesmoke;
+    text-align: justify;
+    font-family: cursive;
+    margin-left: 90px;
+}
+.link a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: cursive;
+
+   
+
+}
+.link{
+    list-style: none;
+}
+.icon a{
+    margin-left:10px;
+    padding: 7px;
+}
+.font{
+    font-family: cursive;
+}
+.social a {
+    margin: 10px;
+    padding: 7px;
+}
+.ftext{
+    background-color: chocolate;
+}
