@@ -21,7 +21,7 @@ const Home = () => {
 
                    
                 </h1>
-                <h2 className='text-center mt-5'><input className='field' type="text" name="" id="" placeholder='serarch for bike'    /><button className='btn btn-success mb-2'>Search <FcSearch></FcSearch></button></h2>
+                <p><h2 className='text-center mt-5'><input className='field' type="text" name="" id="" placeholder='serarch for bike'    /><button className='btn btn-success mb-2'>Search <FcSearch></FcSearch></button></h2></p>
                 
                 </div>
                

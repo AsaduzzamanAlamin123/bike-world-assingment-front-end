@@ -1,9 +1,19 @@
 import React from 'react';
+import './NotFound.css'
+import NotFoundd from '../MyImage/pexels-ivan-babydov-7788609.jpg'
 
 const NotFound = () => {
     return (
         <div>
-            <h2>404</h2>
+            <div>
+                <div>
+            <img className='four-pic' src={NotFoundd} alt="" />
+                </div>
+                <div>
+                <h1>404</h1>
+                </div>
+            </div>
+            
         </div>
     );
 };
