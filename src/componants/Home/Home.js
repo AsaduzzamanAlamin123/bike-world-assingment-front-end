@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Bike from '../MyImage/pexels-cottonbro-5195634.jpg';
 import Bike1 from '../MyImage/pexels-arthouse-studio-6068905.jpg';
 import './Home.css';
 import { FcSearch } from 'react-icons/fc';
+import InventoryShow from '../InventoryShow/InventoryShow';
 // 
 
 const Home = () => {
+    const [bikes , setBikes] = useState([]);
+    useEffect(()=>{
+        fetch('http://localhost:5000/bikes')
+        .then(res =>res.json())
+        .then(data => setBikes(data))
+    },[])
     return (
         <div className='container'>
             <div style={{ 
@@ -21,12 +28,17 @@ const Home = () => {
 
                    
                 </h1>
-                <p><h2 className='text-center mt-5'><input className='field' type="text" name="" id="" placeholder='serarch for bike'    /><button className='btn btn-success mb-2'>Search <FcSearch></FcSearch></button></h2></p>
+                <h2 className='text-center mt-5'><input className='field' type="text" name="" id="" placeholder='serarch for bike'    /><button className='btn btn-success mb-2'>Search <FcSearch></FcSearch></button></h2>
                 
                 </div>
                
                     
 
+            </div>
+            <div className='card-div'>
+                {
+                    bikes.map(bike =><InventoryShow key={bike._id} bike={bike}></InventoryShow>)
+                }
             </div>
             <div className='setion1'>
                 <div className='text-part'>

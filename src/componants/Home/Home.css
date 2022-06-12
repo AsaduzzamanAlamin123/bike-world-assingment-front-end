@@ -15,6 +15,7 @@
     margin: auto;
   width: 50%;
   margin-left: 300px;
+  margin-top: 180px;
   }
   .text{
     color:white;
@@ -62,6 +63,7 @@
     width: 100%;
     border-radius: 7px;
   }
-  .imgg-part{
-   
+  .card-div{
+    display: grid;
+    grid-template-columns: auto auto auto;
   }
