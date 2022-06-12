@@ -2,12 +2,15 @@ import React, { useEffect, useState } from 'react';
 import { FcRegisteredTrademark } from 'react-icons/fc';
 import login from '../MyImage/login-removebg-preview.png'
 import { Link } from "react-router-dom";
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../Firebse/Firebase.init';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Button } from 'react-bootstrap';
+import { AiFillGoogleCircle } from 'react-icons/ai';
 
 const Register = () => {
+    const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [userInfo , setUserInfo] = useState({
         email:'',
         password:'',
@@ -103,11 +106,14 @@ const Register = () => {
             <p>If you have Account? <Link className='text-decoration-none text-danger' to='/login'>pLease Login</Link> </p>
            </form>
            
-            <button onClick={() => createUserWithEmailAndPassword(userInfo.email, userInfo.password)} className='btn btn-primary mb-3 fw-bolder fst-italic'>Register <FcRegisteredTrademark></FcRegisteredTrademark></button>
-           
-            
+            <Button  size='lg'  onClick={() => createUserWithEmailAndPassword(userInfo.email, userInfo.password)} className='w-75 btn btn-primary mb-3 fw-bolder fst-italic'>Register <FcRegisteredTrademark></FcRegisteredTrademark></Button>
+           <br />
+            <Button onClick={() => signInWithGoogle()} className='w-75 mb-5' variant="primary" size="lg">
+    Sign In With Google <AiFillGoogleCircle></AiFillGoogleCircle>
+  </Button>
             
             </div>
+           
             <ToastContainer></ToastContainer>
            
         </div>
@@ -116,3 +122,4 @@ const Register = () => {
 
 
 export default Register;
+// 
