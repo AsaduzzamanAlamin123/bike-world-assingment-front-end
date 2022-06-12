@@ -16,7 +16,7 @@ const Header = () => {
     <Nav className="me-auto menu">
       <Link to='/'>Home</Link>
       <Link to='/inventory'>Inventory</Link>
-      <Link to='/inventory'>Inventory</Link>
+      
       <Link to='/login'>Log In</Link>
       <Link to='/register'>Register</Link>
     </Nav>

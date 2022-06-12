@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './InventoryShow.css'
 
 const InventoryShow = ({bike}) => {
     console.log(bike);
-    const {picture , name ,aboutProduct} = bike;
+    const {_id ,picture , name ,aboutProduct} = bike;
 
     return (
         <div>
@@ -17,7 +18,7 @@ const InventoryShow = ({bike}) => {
         <h3 className='card-t'>{name}</h3>
         <p className='card-t'>{aboutProduct.slice(0,90)}</p>
 
-        <button className="button" ><span>See Detailes </span></button>
+        <Link to={`/bike/${_id}`}><button className="button" ><span>See Detailes </span></button></Link>
       </div>
     </div>    
   </div>

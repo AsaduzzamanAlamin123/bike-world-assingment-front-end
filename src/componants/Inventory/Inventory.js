@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import InventoryShow from '../InventoryShow/InventoryShow';
+import Slider from '../Slider/Slider';
+
+
 
 const Inventory = () => {
     const [bikes , setBikes] = useState([]);
@@ -11,6 +14,11 @@ const Inventory = () => {
     },[])
     return (
         <div>
+
+            <div>
+                <Slider></Slider>
+            </div>
+            <h3 className='text-center text-danger'>All Products</h3>
            
             <div className='card-div'>
                 {

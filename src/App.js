@@ -8,6 +8,7 @@ import LogIn from './componants/Login/Login';
 import Register from './componants/Register/Register';
 import NotFound from './componants/NotFound/NotFound'
 import Footer from './componants/Footer/Footer';
+import BikeDetailes from './componants/BikeDetailes/BikeDetailes';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path='/inventory'element={<Inventory></Inventory>}></Route>
       <Route path='/login' element={<LogIn></LogIn>}></Route>
       <Route path='/register' element={<Register></Register>}></Route>
+      <Route path='/bike/:bikes'element={<BikeDetailes></BikeDetailes>}></Route>
       <Route path='*' element={<NotFound></NotFound>}></Route>
      </Routes>
      <Footer></Footer>

@@ -1,0 +1,25 @@
+.detailes-st{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.text-det{
+    position: absolute;
+left: 80%;
+top: 50%;
+transform: translate(-50%, -50%);
+background-color: white;
+border-radius: 10px;
+padding: 10px;
+}
+.text-det p{
+    color: cadetblue;
+    
+    font-family: cursive;
+}
+.table-data td{
+    color: red;
+    font-family: cursive;
+}
+.det-pic{
+    width: 100%;
+}
