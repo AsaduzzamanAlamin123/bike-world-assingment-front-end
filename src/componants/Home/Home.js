@@ -40,7 +40,7 @@ const Home = () => {
             <div className='card-div'>
                 
                 {
-                    bikes.map(bike =><InventoryShow key={bike._id} bike={bike}></InventoryShow>)
+                    bikes.slice(0,6).map(bike =><InventoryShow key={bike._id} bike={bike}></InventoryShow>)
                 }
                
             </div>
