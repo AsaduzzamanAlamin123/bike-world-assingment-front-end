@@ -4,6 +4,7 @@ import Bike1 from '../MyImage/pexels-arthouse-studio-6068905.jpg';
 import './Home.css';
 import { FcSearch } from 'react-icons/fc';
 import InventoryShow from '../InventoryShow/InventoryShow';
+import { Link } from 'react-router-dom';
 // 
 
 const Home = () => {
@@ -35,11 +36,15 @@ const Home = () => {
                     
 
             </div>
+            <h4 className='text-center text-danger mt-3'>Some Product</h4>
             <div className='card-div'>
+                
                 {
                     bikes.map(bike =><InventoryShow key={bike._id} bike={bike}></InventoryShow>)
                 }
+               
             </div>
+            <Link className='text-decoration-none ms-5' to='/inventory'>See More...</Link>
             <div className='setion1'>
                 <div className='text-part'>
                     <p> wooden rims, a leading-link front suspension fork,
