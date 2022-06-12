@@ -4,6 +4,7 @@ import {useParams} from "react-router-dom";
 import './BikeDetailes.css';
 import { HiInformationCircle } from 'react-icons/hi';
 import { TbDatabaseExport } from 'react-icons/tb';
+import { GiDoorWatcher } from 'react-icons/gi';
 // HiInformationCircle
 
 const BikeDetailes = () => {
@@ -16,7 +17,7 @@ const BikeDetailes = () => {
     },[])
     return (
         <div>
-            <h2>Bike Detailes</h2>
+            <h2 className='wer'>Bike Detailes <GiDoorWatcher></GiDoorWatcher></h2>
             <div className='detailes-st'>
                 <div>
                 <img className=' rounded det-pic' src={Detailes.picture} alt="" />

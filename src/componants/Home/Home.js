@@ -5,7 +5,9 @@ import './Home.css';
 import { FcSearch } from 'react-icons/fc';
 import InventoryShow from '../InventoryShow/InventoryShow';
 import { Link } from 'react-router-dom';
-// 
+import { MdAutoAwesomeMosaic } from 'react-icons/md';
+
+// MdAutoAwesomeMosaic
 
 const Home = () => {
     const [bikes , setBikes] = useState([]);
@@ -36,7 +38,7 @@ const Home = () => {
                     
 
             </div>
-            <h4 className='text-center text-danger mt-3'>Some Product</h4>
+            <h4 className='text-center text-danger mt-3'>Some Product <MdAutoAwesomeMosaic></MdAutoAwesomeMosaic></h4>
             <div className='card-div'>
                 
                 {
