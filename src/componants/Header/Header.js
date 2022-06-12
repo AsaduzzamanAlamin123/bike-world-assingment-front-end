@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <div>
             
-            <Navbar className='nav-bg container rounded' variant="dark">
+            <Navbar className='nav-bg  rounded' variant="dark">
     <Container>
     {/* <Navbar.Brand href="#home">Bike World</Navbar.Brand> */}
     <Link className='logo' to='/'>Bike World</Link>
