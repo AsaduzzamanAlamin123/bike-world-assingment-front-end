@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import InventoryShow from '../InventoryShow/InventoryShow';
 import Slider from '../Slider/Slider';
 
@@ -25,6 +26,7 @@ const Inventory = () => {
                     bikes.map(bike =><InventoryShow key={bike._id} bike={bike}></InventoryShow>)
                 }
                 </div>
+                <Link className='mnb' to='/new'>Add new products</Link>
 
         </div>
     );

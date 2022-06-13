@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
-import {useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import './BikeDetailes.css';
 import { HiInformationCircle } from 'react-icons/hi';
 import { TbDatabaseExport } from 'react-icons/tb';
@@ -47,7 +47,7 @@ const BikeDetailes = () => {
       <td>{Detailes.engine}</td>
       <td>{Detailes.topSpeed}</td>
       <td>{Detailes.price}</td>
-      <td>{Detailes.quantity}</td>
+      {/* <td>{Detailes.quantity}  </td>   delivered and form dia quantity er man varanu  */}
       <td>{Detailes.company}</td>
       <td>{Detailes.discoveredCountry}</td>
     </tr>
@@ -72,9 +72,11 @@ const BikeDetailes = () => {
     </tr> */}
   </tbody>
 </Table>
+<Link className='mnb' to='/inventory'>Manage Inventory</Link>
             </div>
         </div>
     );
 };
 
 export default BikeDetailes;
+// delivered and form dia quantity er man varanu 

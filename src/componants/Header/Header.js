@@ -30,6 +30,7 @@ const Header = () => {
     <Nav className="me-auto menu">
       <Link to='/'>Home</Link>
       <Link to='/inventory'>Inventory</Link>
+      <Link to='/new'>Add products</Link>
       
       
       <Link to='/register'>Register</Link>

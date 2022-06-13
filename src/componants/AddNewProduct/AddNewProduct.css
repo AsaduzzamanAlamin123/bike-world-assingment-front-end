@@ -1,0 +1,31 @@
+.body{
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.img-di{
+    height: 500px;
+    background-color: cadetblue;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    clip-path: polygon(100% 0%, 88% 0%, 37% 0%, 0% 0%, 0% 25%, 0% 43%, 0% 80%, 25% 90%, 40% 95%, 60% 95%, 75% 91%, 100% 81%, 100% 44%, 100% 25%);;
+}
+.vertical-centerr{
+    margin: 0;
+    position: absolute;
+    top: 15%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: auto;
+  width: 50%;
+  margin-left: 450px;
+  margin-top: 160px;
+  }
+
+  .fan{
+    margin-left: 120px;
+    color: cyan;
+  }
+  .vertical-centerr h1{
+    color: aliceblue;
+    font-family: cursive;
+  }

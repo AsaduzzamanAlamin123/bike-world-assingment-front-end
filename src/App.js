@@ -10,6 +10,7 @@ import NotFound from './componants/NotFound/NotFound'
 import Footer from './componants/Footer/Footer';
 import BikeDetailes from './componants/BikeDetailes/BikeDetailes';
 import RequireAuth from './RequireAuth/RequireAuth';
+import AddNewProduct from './componants/AddNewProduct/AddNewProduct';
 
 function App() {
   return (
@@ -27,6 +28,11 @@ function App() {
       <Route path='/bike/:bikes'element={
         <RequireAuth>
           <BikeDetailes></BikeDetailes>
+        </RequireAuth>
+      }></Route>
+      <Route path='/new' element={
+        <RequireAuth>
+          <AddNewProduct></AddNewProduct>
         </RequireAuth>
       }></Route>
       <Route path='*' element={<NotFound></NotFound>}></Route>
