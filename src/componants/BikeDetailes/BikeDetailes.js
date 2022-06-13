@@ -48,6 +48,7 @@ const BikeDetailes = () => {
       <td>{Detailes.topSpeed}</td>
       <td>{Detailes.price}</td>
       {/* <td>{Detailes.quantity}  </td>   delivered and form dia quantity er man varanu  */}
+      <td>{Detailes.quantity}</td>
       <td>{Detailes.company}</td>
       <td>{Detailes.discoveredCountry}</td>
     </tr>

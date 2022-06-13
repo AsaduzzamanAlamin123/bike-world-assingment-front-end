@@ -9,6 +9,54 @@ import { Button, Form } from 'react-bootstrap';
 // 
 
 const AddNewProduct = () => {
+    const handleAddBike = (event)=>{
+        event.preventDefault();
+        const price = event.target.price.value;
+        const quantity = event.target.quantity.value;
+        const engine = event.target.engine.value;
+        const topSpeed = event.target.topSpeed.value;
+        const picture = event.target.picture.value;
+        const Name = event.target.Name.value;
+        const suplierName = event.target.suplierName.value;
+        const company = event.target.company.value;
+        const aboutProduct = event.target.aboutProduct.value;
+        const discoveredCountry = event.target.discoveredCountry.value;
+        
+
+        const information = {price , quantity , engine , topSpeed , picture , Name , suplierName ,company , aboutProduct , discoveredCountry}
+
+
+        console.log(price);
+        console.log(quantity);
+        console.log(engine);
+        console.log(topSpeed);
+        console.log(picture);
+        console.log(Name);
+        console.log(suplierName);
+        console.log(company);
+        console.log(aboutProduct);
+        console.log(discoveredCountry);
+
+
+        // -------------
+        fetch('http://localhost:5000/bike', {
+  method: 'POST',
+  body: JSON.stringify(information),
+  headers: {
+    'Content-type': 'application/json',
+  },
+})
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+    alert('add successfully');
+    event.target.reset();
+   
+  });
+
+
+
+}
     return (
         <div className='body'>
            
@@ -18,7 +66,7 @@ const AddNewProduct = () => {
                <div> <img src={Bike} alt="" /></div>
                 </div>
               <div>
-              <Form className='w-75 mx-auto mb-5'>
+              <Form onSubmit={handleAddBike} className='w-75 mx-auto mb-5'>
   <Form.Group className="mb-3" controlId="formBasicEmail">
     
     <Form.Control type="text" name='price' placeholder="Enter price" required/>
